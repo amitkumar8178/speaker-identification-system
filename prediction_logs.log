@@ -1,0 +1,27 @@
+2025-04-08 12:23:45 - WARNING -  * Debugger is active!
+2025-04-08 12:23:45 - INFO -  * Debugger PIN: 120-575-694
+2025-04-08 12:23:55 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-08 12:23:55 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 12:23:55 - INFO -  * Restarting with stat
+2025-04-08 12:23:59 - WARNING -  * Debugger is active!
+2025-04-08 12:23:59 - INFO -  * Debugger PIN: 120-575-694
+2025-04-08 12:24:51 - INFO -  * Detected change in 'C:\\Users\\91892\\OneDrive\\Documents\\speaker identification system\\app.py', reloading
+2025-04-08 12:24:51 - INFO -  * Restarting with stat
+2025-04-08 12:24:56 - WARNING -  * Debugger is active!
+2025-04-08 12:24:56 - INFO -  * Debugger PIN: 120-575-694
+2025-04-08 12:25:28 - INFO -  * Detected change in 'C:\\Users\\91892\\OneDrive\\Documents\\speaker identification system\\app.py', reloading
+2025-04-08 12:25:29 - INFO -  * Restarting with stat
+2025-04-08 12:37:25 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-08 12:37:25 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 12:37:25 - INFO -  * Restarting with stat
+2025-04-08 12:37:29 - WARNING -  * Debugger is active!
+2025-04-08 12:37:29 - INFO -  * Debugger PIN: 120-575-694
+2025-04-08 12:37:57 - INFO - 127.0.0.1 - - [08/Apr/2025 12:37:57] "GET / HTTP/1.1" 200 -
+2025-04-08 12:37:57 - INFO - 127.0.0.1 - - [08/Apr/2025 12:37:57] "GET /model.js HTTP/1.1" 200 -
+2025-04-08 12:37:59 - INFO - 127.0.0.1 - - [08/Apr/2025 12:37:59] "[36mGET / HTTP/1.1[0m" 304 -
+2025-04-08 12:38:00 - INFO - 127.0.0.1 - - [08/Apr/2025 12:38:00] "[36mGET /model.js HTTP/1.1[0m" 304 -
+2025-04-08 12:38:11 - INFO - 127.0.0.1 - - [08/Apr/2025 12:38:11] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-08 12:40:27 - INFO -  * Detected change in 'c:\\Users\\91892\\OneDrive\\Documents\\speaker identification system\\app.py', reloading
+2025-04-08 12:40:28 - INFO -  * Restarting with stat

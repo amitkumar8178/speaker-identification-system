@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Identification</title>
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #3C1B43;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #D4E79E;
+            text-align: center;
+        }
+
+        
+        .container {
+            background: #501537;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        
+        h2 {
+            font-size: 2rem;
+            color: #D4E79E;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        
+        .description {
+            font-size: 1rem;
+            color: #B8C480;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        
+        .upload-label {
+            background: #922D50;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #D4E79E;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .upload-label:hover {
+            background: #B8C480;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #B8C480;
+            color: #501537;
+            border: none;
+            padding: 14px 22px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #D4E79E;
+        }
+
+        .btn.record {
+            background: #922D50;
+            color: #D4E79E;
+        }
+
+        .btn.stop {
+            background: #501537;
+            color: #D4E79E;
+        }
+
+        .btn.identify {
+            background: #3C1B43;
+            color: #D4E79E;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        
+        .result-text {
+            margin-top: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #D4E79E;
+        }
+
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .upload-label:hover {
+            transform: scale(1.05);
+        }
+
+        
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .description {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                padding: 12px 18px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔊 Voice Identification System 🔍</h2>
+        <p class="description">Upload or record your voice to identify the speaker.</p>
+        
+        <label for="audioUpload" class="upload-label">📂 Upload Audio</label>
+        <input type="file" id="audioUpload" accept="audio/*" onchange="handleFileUpload(event)">
+        
+        <div class="btn-group">
+            <button class="btn record" onclick="startRecording()">🎤 Start Recording</button>
+            <button class="btn stop" onclick="stopRecording()">⏹ Stop Recording</button>
+        </div>
+        
+        <button class="btn identify" onclick="identifyVoice()">🔍 Identify</button>
+      
+        <p id="result" class="result-text"></p>
+    </div>
+
+    <script src="model.js"></script> 
+</body>
+
+</html>
